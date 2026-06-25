@@ -5,7 +5,7 @@ A zero-overhead, highly customizable On-Screen Display (OSD) overlay for Lenovo 
 This project was developed and explicitly tested on a **Lenovo IdeaPad Gaming 3 (15ACH6, Model 82K2)** running CachyOS with KDE Plasma 6 (Wayland).
 
 ## Features
-* **Zero Overhead:** Consumes ~28MB of RAM and 0.0% CPU while idle.
+* **Zero Overhead:** 
 * **Wayland Native:** Uses `gtk4-layer-shell` for true overlay positioning, click-through support, and focus-stealing prevention.
 * **Highly Customizable:** Change colors, opacity, fonts, margins, text, and custom icons via a simple TOML configuration file.
 * **Smart Polling:** Hardware debounce protection flushes the queue to prevent UI stuttering if you spam the shortcut keys.
@@ -26,7 +26,7 @@ If you prefer to build it yourself or are using another distribution, follow the
 Ensure you have `cargo`, `gtk4` (v4.10+ recommended), and `gtk4-layer-shell` installed via your package manager.
 
 #### 2. Clone and Build
-git clone https://github.com/omrkrz/FnQVisual-rs.git
+git clone https://github.com/OmurEKiraz/FnQVisual-rs.git
 cd FnQVisual-rs
 cargo build --release --locked
 
