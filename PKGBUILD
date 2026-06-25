@@ -9,7 +9,7 @@ depends=('gtk4' 'gtk4-layer-shell')
 makedepends=('cargo')
 install="fnq-visual.install"
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/OmurEKiraz/FnQVisual-rs/archive/refs/tags/v${pkgver}.tar.gz")
-sha256sums=('SKIP')
+sha256sums=('faa88615b89c2215d81175fd3aa27c947adcb7ea81eca69f51746b6bf0c3f354')
 
 build() {
     cd "FnQVisual-rs-${pkgver}"

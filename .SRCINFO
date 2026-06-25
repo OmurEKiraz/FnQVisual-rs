@@ -1,0 +1,15 @@
+pkgbase = fnq-visual
+	pkgdesc = A zero-overhead, highly customizable Lenovo Fn+Q OSD overlay for Linux
+	pkgver = 0.1.0
+	pkgrel = 1
+	url = https://github.com/OmurEKiraz/FnQVisual-rs
+	install = fnq-visual.install
+	arch = x86_64
+	license = MIT
+	makedepends = cargo
+	depends = gtk4
+	depends = gtk4-layer-shell
+	source = fnq-visual-0.1.0.tar.gz::https://github.com/OmurEKiraz/FnQVisual-rs/archive/refs/tags/v0.1.0.tar.gz
+	sha256sums = faa88615b89c2215d81175fd3aa27c947adcb7ea81eca69f51746b6bf0c3f354
+
+pkgname = fnq-visual
