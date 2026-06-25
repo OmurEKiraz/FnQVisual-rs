@@ -51,29 +51,29 @@ You can change text labels, layout properties, or point `icon_path` to your own 
 
 ### Configuration Options
 
-display_duration_ms = 2500  # OSD visible time in milliseconds
+###### display_duration_ms = 2500  # OSD visible time in milliseconds
 
-[window]
-width = 200                 # Width of the OSD
-height = 180                # Height of the OSD
-icon_size = 72              # Size of the profile icon
-font_size = 16000           # Font size in GTK Pango units (16000 = 16pt)
-font_weight = "heavy"       # "heavy", "bold", "normal"
-anchor_edge = "bottom"      # Edge alignment: "bottom", "top", or "center"
-margin_offset = 100         # Pixels away from the screen edge
-background_rgba = "rgba(25, 25, 25, 0.70)" # OSD window background color
+#### [window]
+###### width = 200                 # Width of the OSD
+###### height = 180                # Height of the OSD
+###### icon_size = 72              # Size of the profile icon
+###### font_size = 16000           # Font size in GTK Pango units (16000 = 16pt)
+###### font_weight = "heavy"       # "heavy", "bold", "normal"
+###### anchor_edge = "bottom"      # Edge alignment: "bottom", "top", or "center"
+###### margin_offset = 100         # Pixels away from the screen edge
+###### background_rgba = "rgba(25, 25, 25, 0.70)" # OSD window background color
 
-[quiet]
-text = "QUIET MODE"
-icon_path = null            # Set a valid file path to override embedded asset
+#### [quiet]
+###### text = "QUIET MODE"
+###### icon_path = null            # Set a valid file path to override embedded asset
 
-[balanced]
-text = "BALANCED MODE"
-icon_path = null
+#### [balanced]
+###### text = "BALANCED MODE"
+###### icon_path = null
 
-[performance]
-text = "PERFORMANCE MODE"
-icon_path = null
+#### [performance]
+###### text = "PERFORMANCE MODE"
+###### icon_path = null
 
 ---
 
