@@ -26,7 +26,7 @@ If you prefer to build it yourself or are using another distribution, follow the
 Ensure you have `cargo`, `gtk4` (v4.10+ recommended), and `gtk4-layer-shell` installed via your package manager.
 
 #### 2. Clone and Build
-git clone https://github.com/omrkrz/FnQVisual-rs.git
+git clone https://github.com/OmurEKiraz/FnQVisual-rs.git
 cd FnQVisual-rs
 cargo build --release --locked
 
@@ -83,9 +83,6 @@ This application monitors the hardware ACPI state via `/sys/firmware/acpi/platfo
 
 * **KDE Plasma 6 (Wayland) / wlroots (Hyprland, Sway):** Fully supported via native layer-shell implementations.
 * **GNOME (Wayland) & X11 Environments:** Currently **untested**. 
-
-### We need your help!
-If you are running GNOME or an X11 environment, please help us test! If you encounter issues with focus-stealing, transparency, or window borders, feel free to **open an issue** or submit a **pull request** to help us perfect the support across all setups.
 
 ---
 

@@ -4,7 +4,7 @@ post_install() {
     echo " "
     echo " To enable and start the background service,"
     echo " run the following command as your normal user"
-    echo " (DO NOT use sudo):"
+    echo " (DO NOT run as root):"
     echo " "
     echo "     systemctl --user enable --now fnq-visual.service"
     echo " "
