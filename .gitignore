@@ -1,1 +1,16 @@
-/target
+# Rust build artifacts
+/target/
+
+# Cargo locks & backups (Keep Cargo.lock for binary applications)
+**/*.rs.bk
+
+# IDE and Editor specific configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Cargo.lock

@@ -1,6 +1,5 @@
 use serde::{Deserialize, Serialize};
 use std::fs;
-use std::path::Path;
 
 pub const EMBEDDED_QUIET: &[u8] = include_bytes!("assets/quiet.png");
 pub const EMBEDDED_BALANCED: &[u8] = include_bytes!("assets/balanced.png");
@@ -64,18 +63,21 @@ impl Default for AppConfig {
 }
 
 pub fn load_config() -> AppConfig {
-    let config_dir = format!("{}/.config/fnq-visual", std::env::var("HOME").unwrap_or_default());
-    let config_path = format!("{}/config.toml", config_dir);
-    let path = Path::new(&config_path);
+    // Safely resolve the user config directory using the `dirs` crate
+    let mut config_dir = dirs::config_dir().expect("Could not determine user config directory");
+    config_dir.push("fnq-visual");
+    
+    let mut config_path = config_dir.clone();
+    config_path.push("config.toml");
 
-    if !path.exists() {
-        let _ = fs::create_dir_all(config_dir);
+    if !config_path.exists() {
+        let _ = fs::create_dir_all(&config_dir);
         let default_toml = toml::to_string_pretty(&AppConfig::default()).unwrap();
-        let _ = fs::write(path, default_toml);
+        let _ = fs::write(&config_path, default_toml);
         return AppConfig::default();
     }
 
-    if let Ok(content) = fs::read_to_string(path) {
+    if let Ok(content) = fs::read_to_string(&config_path) {
         if let Ok(cfg) = toml::from_str(&content) {
             return cfg;
         }
