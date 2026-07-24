@@ -17,7 +17,7 @@ This project was developed and explicitly tested on a **Lenovo IdeaPad Gaming 3 
 ### Method 1: Arch User Repository (AUR)
 If you are on Arch Linux or an Arch-based distribution (like CachyOS, Manjaro, or EndeavourOS), you can install it using your favorite AUR helper:
 
-paru -S fnq-visual
+paru -S fnqvisual
 
 ### Method 2: Building from Source
 If you prefer to build it yourself or are using another distribution, follow these steps:
